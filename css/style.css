@@ -1,5 +1,5 @@
 body{
-    font-family: Arial, Helvetica, Comic Sans MS, sans-serif;
+    font-family: Arial, Helvetica, Comic Sans MS, sans-serif !important;
     background-color: black;
     color:black;
     
@@ -20,6 +20,7 @@ img {
 #logo {
     color: black;
     margin: 0;
+    display:inline;
 }
 
 #content{
@@ -58,4 +59,27 @@ img {
     left: 0;
     width: 100%;
     z-index: 2;
+}
+
+.tabs{
+    width: 100px;
+    height: 60px;
+    position: relative;
+    left: 400px; 
+    border: none;
+    background-color: antiquewhite;
+    
+
+}
+
+button.tabs:hover{
+    bottom:10px;
+    cursor: pointer;
+}
+
+.tabs:focus{ outline-color: #A75000 }
+
+.tabs:active{
+    background-color: black;
+    color: white;
 }
