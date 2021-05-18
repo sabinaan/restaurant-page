@@ -11,10 +11,25 @@ const createStartPage = function(){
     header.setAttribute("id", "header");
     container.appendChild(header);
 
-    let headerH1 = document.createElement("h1");
-    headerH1.setAttribute("id", "logo");
-    headerH1.textContent = "Sushi Express"
-    header.appendChild(headerH1);
+    let logo = document.createElement("h1");
+    logo.setAttribute("id", "logo");
+    logo.textContent = "Sushi Express"
+    header.appendChild(logo);
+
+    let tab1 = document.createElement("button");
+    tab1.textContent = "HOME";
+    tab1.className = "tabs";
+    header.appendChild(tab1);
+
+    let tab2 = document.createElement("button");
+    tab2.textContent = "MENU";
+    tab2.className = "tabs";
+    header.appendChild(tab2);
+
+    let tab3 = document.createElement("button");
+    tab3.textContent = "CONTACT";
+    tab3.className = "tabs";
+    header.appendChild(tab3);
 
     //Main
     let main = document.createElement("div");
