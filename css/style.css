@@ -6,7 +6,7 @@ body{
 
 }
 
-img {
+img.background-img {
     max-width: 100%;
     height: auto;
     opacity: 100%;
@@ -15,6 +15,12 @@ img {
     left: 0;
     z-index: -1;
     
+}
+
+img.small-img{
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 #logo {
@@ -45,18 +51,20 @@ img {
 #main{
     position: relative;
     text-align: center;
-    min-height: 500px;
+    min-height: 853px;
     margin-top: 80px;
     color: antiquewhite;
     padding: 20px
 }
 
+#main-content{
+    margin-top: 120px;
+
+}
 #footer{
     height: 80px;
     background-color: burlywood;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: absolute;
     width: 100%;
     z-index: 2;
 }
@@ -68,7 +76,7 @@ img {
     left: 400px; 
     border: none;
     background-color: antiquewhite;
-    
+
 
 }
 
