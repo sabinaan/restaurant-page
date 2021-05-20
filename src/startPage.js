@@ -1,11 +1,6 @@
 const createStartPage = function(){
     let container = document.querySelector("#content");
 
-    //Image
-    let image = document.createElement("img");
-    image.setAttribute("src", "css/img/pexels-jose-esquivel-5878433.jpg")
-    container.appendChild(image);
-
     //Header
     let header = document.createElement("div");
     header.setAttribute("id", "header");
@@ -17,16 +12,19 @@ const createStartPage = function(){
     header.appendChild(logo);
 
     let tab1 = document.createElement("button");
+    tab1.setAttribute("id","home-tab");
     tab1.textContent = "HOME";
     tab1.className = "tabs";
     header.appendChild(tab1);
 
     let tab2 = document.createElement("button");
+    tab2.setAttribute("id","menu-tab");
     tab2.textContent = "MENU";
     tab2.className = "tabs";
     header.appendChild(tab2);
 
     let tab3 = document.createElement("button");
+    tab3.setAttribute("id","contact-tab");
     tab3.textContent = "CONTACT";
     tab3.className = "tabs";
     header.appendChild(tab3);
@@ -36,22 +34,17 @@ const createStartPage = function(){
     main.setAttribute("id", "main");
     container.appendChild(main);
 
-    let mainContent = document.createElement("div");
-    mainContent.setAttribute("id","main-content");
-    main.appendChild(mainContent);
-
-    let mainTitle = document.createElement("h2");
-    mainTitle.textContent = "Great sushi, when you want it!";
-    mainContent.appendChild(mainTitle);
-
-    let mainP = document.createElement("p");
-    mainP.textContent = "Come and taste our handmade sushi. Always made with fresh and high quality ingredients.";
-    mainContent.appendChild(mainP);
-
     //Footer
     let footer = document.createElement("div");
     footer.setAttribute("id","footer");
     container.appendChild(footer);
 }
 
-export {createStartPage}
+const clearMain = function(){
+    let main = document.querySelector("#main");
+    while(main.hasChildNodes()){
+        main.removeChild(main.firstChild)
+    }
+}
+
+export {createStartPage, clearMain}
