@@ -4,6 +4,7 @@ import {createStartPage} from './startPage'
 import {clearMain} from './startPage'
 import {fillMainHome} from './homeMain'
 import {fillMainMenu} from './menuMain'
+import {fillMainContact} from './contactMain'
 
 
 createStartPage()
@@ -24,7 +25,7 @@ menuTab.addEventListener("click", () =>{
 
 contactTab.addEventListener("click", () =>{
     clearMain()
-
+    fillMainContact()
 })
 
 

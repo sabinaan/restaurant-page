@@ -1,11 +1,13 @@
 const fillMainHome = function(){
     let main = document.querySelector("#main");
-    
+
+    //Background image
     let image = document.createElement("img");
     image.setAttribute("src", "css/img/pexels-jose-esquivel-5878433.jpg")
     image.setAttribute("class", "background-img")
     main.appendChild(image);
 
+    //Text content
     let mainContent = document.createElement("div");
     mainContent.setAttribute("id","main-content");
     main.appendChild(mainContent);

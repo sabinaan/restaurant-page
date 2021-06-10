@@ -6,11 +6,14 @@ const createStartPage = function(){
     header.setAttribute("id", "header");
     container.appendChild(header);
 
+    //Logo
     let logo = document.createElement("h1");
     logo.setAttribute("id", "logo");
     logo.textContent = "Sushi Express"
     header.appendChild(logo);
 
+
+    //Tabs
     let tab1 = document.createElement("button");
     tab1.setAttribute("id","home-tab");
     tab1.textContent = "HOME";
